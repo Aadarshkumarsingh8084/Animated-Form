@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Form</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>Create Account</h1>
+                <p>Join us today and get started!</p>
+            </div>
+            
+            <form id="signupForm" class="form">
+                <div class="form-group">
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                    <i class="fas fa-user"></i>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                    <i class="fas fa-envelope"></i>
+                    <div class="underline"></div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                    <i class="fas fa-lock"></i>
+                    <div class="underline"></div>
+                    <button type="button" class="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <i class="fas fa-lock"></i>
+                    <div class="underline"></div>
+                    <button type="button" class="toggle-password">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <span>Sign Up</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            
+            <div class="social-login">
+                <p>Or sign up with</p>
+                <div class="social-icons">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </button>
+                    <button class="social-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="form-footer">
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+        
+        <div class="animation-container">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="welcome-message">
+                <h2>Welcome Back!</h2>
+                <p>Enter your personal details to start your journey with us</p>
+                <button class="switch-btn" id="switchToLogin">Sign In</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <div class="checkmark">
+                <i class="fas fa-check"></i>
+            </div>
+            <h2>Registration Successful!</h2>
+            <p>Your account has been created successfully.</p>
+            <button class="close-btn" id="closeSuccess">Continue</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
